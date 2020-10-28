@@ -1,11 +1,12 @@
 {
-  "name": "hola-node",
+  "name": "back-end",
   "version": "1.0.0",
   "description": "Ejercicio Back-End Hackademy",
-  "main": "./src/app/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Carlos-SSH",
   "homepage": "https://github.com/carlos-ssh/backend-js",
@@ -14,10 +15,14 @@
     "url": "git+https://github.com/carlos-ssh/backend-js.git"
   },
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
   "bugs": {
     "url": "https://github.com/carlos-ssh/backend-js/issues"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
