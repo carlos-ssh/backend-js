@@ -1,3 +1,5 @@
+# Estos son los pasos de el siguiente proyecto.
+
 # Ejercicio de backend
 Este ejercicio es para que puedas definir qué tecnología de backend te interesa y que nosotros podamos conocer un poco más sobre tu perfil y habilidades.
 
