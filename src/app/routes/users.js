@@ -1,5 +1,13 @@
+const dbConnection = require('../../config/dbConnection');
+
 module.exports = app => {
+  const connection = dbConnection();
+
   app.get('/', (req, res) => {
-    res.render('users/users.ejs')
+    connection.query('SELECT * FROM users', (err, result) => {
+      res.render('users/users', {
+        users: result
+      });
+    });
   });
-}
+};

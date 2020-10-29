@@ -12,6 +12,6 @@ CREATE TABLE users(
 
 DESCRIBE users;
 
-INSERT INTO users(name_user, email, kms) values('Angel Enriquez', 'a.enriquez@gmail.com', '4.10');
+INSERT INTO users(name_user, email, kms) values ('Angel Enriquez', 'a.enriquez@gmail.com', '4.10');
 
 SELECT * FROM users;
