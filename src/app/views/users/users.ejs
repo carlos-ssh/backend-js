@@ -25,16 +25,9 @@
           <th>ID</th>
           <th>Usuario</th>
           <th>Correo Electronico</th>
-          <th>kilometros</th>
+          <th>Kilometros</th>
         </tr>
-        <% for(var i = 0; i < users.length; i ++) { %>
-          <tr>
-            <td><%= users[i].id_user %></td>
-            <td><%= users[i].name_user %></td>
-            <td><%= users[i].email %></td>
-            <td><%= users[i].kms %></td>
-          </tr>
-        <% } %> 
+        <%= users %>
       </table>
     </div>
   </div>
