@@ -27,7 +27,16 @@
           <th>Correo Electronico</th>
           <th>Kilometros</th>
         </tr>
-        <%= users %>
+        <% if (users) { %>
+          <% for(var i = 0; i < users.length; i++) { %>
+            <tr>
+              <td><%= users[i].id_user %></td>
+              <td><%= users[i].name_user %></td>
+              <td><%= users[i].email %></td>
+              <td><%= users[i].kms %></td>
+            </tr>
+          <% } %>
+        <% } %>
       </table>
     </div>
   </div>

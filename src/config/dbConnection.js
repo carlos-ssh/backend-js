@@ -1,10 +1,10 @@
-const mysql = require('mysql');
+var mysql = require('mysql');
 
 module.exports = () => {
   return mysql.createConnection({
     host: 'localhost',
+    database: 'user_portal',
     user: 'root',
-    password: '',
-    database: 'user_portal'
-  })
+    password: '1234567890'
+  });
 }
