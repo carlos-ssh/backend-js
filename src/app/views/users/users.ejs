@@ -12,15 +12,51 @@
     <a href="#" class="ml-2"><i class="fas fa-running fa-3x text-white"></i></a>
     <div class="container">
       <div class="mx-auto">
-        <a href="#" class="navbar-brand">Home</a>
-        <a href="#" class="navbar-brand">Usuarios</a>
+        <a href="#" class="navbar-brand">Corredores</a>
       </div>
     </div>
   </nav>
+  <div class="container text-center mt-4">
+    <h3>Bienvenido</h3>
+
+    <p>Esta plataforma esta creada para llevar un registro semanal de el rendimiento nuestros corredores. <br> 
+      Encontraras en esta sección un formulario el cual se compone de: Nombre, Correo Electronico y Kilometros recorridos. <br>
+      Cualquier duda o sugerencia favor de contactar: <a href="mailto:example@email.com">direccion@corresinparar.com</a> ó a nuestros telefonos:
+      (442) 823 - 4050 en el interior de la república Méxicana en un horario de <strong> Lunes a Viernes 8:00hrs a 18:00hrs y Sabados 9:00hrs a 14:00hrs.</strong>
+    </p>
+    <br>
+    <i>Anima Sana in Corpore Sano</i>
+    <p>(mente sana en un cuerpo sano).</p>
+  </div>
   <div class="container">
-    <div class="row mx-auto">
-      <div class="col-md-6 mt-4 text-center mx-auto">
-        <table class="table table-striped">
+    <div class="container mx-auto mt-5">
+      <div class="row col-12 mt-4 mx-auto">
+        <form action="/users" method="post" class="mx-auto mt-5 card px-5 py-5">
+          <h3 class="card-title">Añade tu Información a la Bitacora:</h3>
+  
+          <div class="form-group">
+            <h5 class="mt-3">Nombre:</h5>
+            <input type="text" name="name_user" id="name" class="w-100">
+  
+            <h5 class="mt-3">e-Mail:</h5>
+            <input type="email" name="email" id="Email" class="w-100">
+  
+            <h5 class="mt-3">Kilometros:</h5>
+            <input id="kms" type="text" placeholder="0.00" required name="kms" min="0" value="0" step="0.01" title="Kilometros" pattern="^\d+(?:\.\d{1,2})?$" onblur="
+            this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this.value)?'inherit':'red'
+            " class="w-100">
+          </div>
+  
+          <div class="container text-center mx-auto my-5">
+            <input type="submit" class="btn btn-primary mx-auto w-50 mb-5">
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <div class="row mx-auto mb-5">
+      <div class="col-md-6 mt-4 text-center mx-auto card">
+        <table class="table table-striped mb-2">
           <tr>
             <th>ID</th>
             <th>Usuario</th>
@@ -38,30 +74,6 @@
             <% } %>
           <% } %>
         </table>
-      </div>
-    </div>
-    <div class="container mx-auto mt-5">
-      <div class="row col-12 mt-4 mx-auto">
-        <form action="/users" method="post" class="mx-auto mt-5">
-          <h3 class="card-title">Añade tu Información a la Bitacora:</h3>
-
-          <div class="form-group">
-            <h5 class="mt-3">Nombre:</h5>
-            <input type="text" name="name_user" id="name" class="w-100">
-
-            <h5 class="mt-3">e-Mail:</h5>
-            <input type="email" name="email" id="Email" class="w-100">
-
-            <h5 class="mt-3">Kilometros:</h5>
-            <input id="kms" type="text" placeholder="0.00" required name="kms" min="0" value="0" step="0.01" title="Kilometros" pattern="^\d+(?:\.\d{1,2})?$" onblur="
-            this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this.value)?'inherit':'red'
-            " class="w-100">
-          </div>
-
-          <div class="container text-center mx-auto my-5">
-            <input type="submit" class="btn btn-primary mx-auto w-50 mb-5">
-          </div>
-        </form>
       </div>
     </div>
   </div>
