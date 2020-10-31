@@ -12,5 +12,16 @@ module.exports = app => {
       });
     });
   });
+
+  app.post('/users', (req, res) => {
+    console.log(req.body);
+    const {name_user, email, kms} = req.body;
+    connection.query('INSERT INTO users SET?', {
+      name_user,
+      email,
+      kms
+    }, (err, result) => {
+      res.redirect('/');
+    });
+  });
 }
-  
