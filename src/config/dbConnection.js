@@ -2,9 +2,9 @@ var mysql = require('mysql');
 
 module.exports = () => {
   return mysql.createConnection({
-    host: 'https://corredores-666-5895a.firebaseio.com/',
-    database: 'user_portal',
-    user: 'root',
-    password: '1234567890'
+    host: 'us-cdbr-east-02.cleardb.com',
+    database: 'heroku_f4032a3609fa0d9',
+    user: 'b20017e4dc1dd6',
+    password: 'b6b2d9be'
   });
 }
