@@ -16,7 +16,7 @@ module.exports = app => {
   app.post('/users', (req, res) => {
     console.log(req.body);
     const {name_user, email, kms} = req.body;
-
+    
     
     connection.query('INSERT INTO users SET?', {
       name_user,
@@ -24,11 +24,11 @@ module.exports = app => {
       kms
     }, (err, result) => {
       res.redirect('/');
-    });
       if(parseFloat(req.body.kms >= 4)) {
         console.log('Se añadió correctamente!');
       } else {
         console.log('Necesitas correr mas');
       }
+    });
   });
 }

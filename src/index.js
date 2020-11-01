@@ -5,7 +5,9 @@ const mysql = require('mysql');
 
 require('./app/routes/users')(app);
 
-//startingthe server
-app.listen(app.get('port'), () => {
+//starting the server
+const server = app.listen(8080, () => {
+  const host = server.address().address;
+  const port = server.address().port;
   console.log('Servidor en el Puerto:', app.get('port'));
 });
