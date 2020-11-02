@@ -50,4 +50,3 @@ $ git clone https://github.com/carlos-ssh/backend-js.git
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
-#
