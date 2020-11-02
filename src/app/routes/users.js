@@ -24,8 +24,10 @@ module.exports = app => {
       kms
     }, (err, result) => {
       res.redirect('/');
-      if(parseFloat(req.body.kms >= 4)) {
+      if(parseFloat(req.body >= 4)) {
         console.log('Se añadió correctamente!');
+      } else if(parseFloat(req.body < 4)) {
+        console.log('Necesitas correr mas');
       } else {
         console.log('Necesitas correr mas');
       }

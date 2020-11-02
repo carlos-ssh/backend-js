@@ -4,7 +4,7 @@
   "description": "Ejercicio Back-End Hackademy",
   "main": "index.js",
   "scripts": {
-    "start": "node .",
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,6 +28,7 @@
     "express": "^4.17.1",
     "mycli": "^1.5.1",
     "mysql": "github:mysqljs/mysql",
+    "path": "^0.12.7",
     "reflect-metadata": "^0.1.13",
     "tslint": "^6.1.3",
     "typeorm": "^0.2.28",
